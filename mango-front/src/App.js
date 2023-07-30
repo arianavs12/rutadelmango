@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
-// import logo from './logo.svg';
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import Home from './pages/Home';
 import Intro from './pages/Historiadelmango';
@@ -10,15 +8,21 @@ import Exportacion from './pages/Empacadoras';
 import Tourims from './pages/Tourism';
 import Admin from './pages/Admin';
 import Login from './pages/Login';
+import Historiadelmango from "./pages/Historiadelmango";
+import Comercio from "./pages/Comercio";
 
 function App() {
   return (
     <div className="App">
-      <div className="App">
-
-      <Home /* authenticate={authenticate} user={user} handleLogout={handleLogout} *//>
-        
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/tourims" element={<Tourims/>} />
+          <Route path="/admin" element={<Admin/>} />
+          <Route path="/historiadelmango" element={<Historiadelmango/>} />
+          <Route path="/comercio" element={<Comercio/>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import AppBar from "./StyledComponents/AppBar";
 import Toolbar from "./StyledComponents/Toolbar";
-// import * as PATHS from "../../utils/paths";
+import * as PATHS from "../utils/paths";
 
 const rightLink = {
   fontSize: 16,
@@ -30,26 +30,27 @@ function AppAppBar(props) {
           { props?.user && (
             <>
                 <Link
-                variant="h6"
-                underline="none"
-                href='/profile'
-                sx={{ ...rightLink, color: "#ff4081" }}
-
-                >{ props?.user?.username }</Link>
-                <Link
-                variant="h6"
-                underline="none"
-                href='/trips'
-                sx={{ ...rightLink, color: "#ff4081" }}
+                  variant="h6"
+                  underline="none"
+                  href='/profile'
+                  sx={{ ...rightLink, color: "#ff4081" }}
                 >
-                {"my trips"}
+                  { props?.user?.username }
                 </Link>
                 <Link
-                variant="h6"
-                underline="none"
-                // href= {PATHS.LOGINPAGE}
-                onClick={props.handleLogout}
-                sx={{ ...rightLink, color: "#ff4081" }}
+                  variant="h6"
+                  underline="none"
+                  href='/trips'
+                  sx={{ ...rightLink, color: "#ff4081" }}
+                >
+                  {"my trips"}
+                </Link>
+                <Link
+                  variant="h6"
+                  underline="none"
+                  // href= {PATHS.LOGINPAGE}
+                  onClick={props.handleLogout}
+                  sx={{ ...rightLink, color: "#ff4081" }}
                 >
                 {"Log Out"}
                 </Link>
@@ -61,7 +62,7 @@ function AppAppBar(props) {
               color="black"
               variant="h6"
               underline="none"
-              // href={PATHS.LOGINPAGE}
+              href={PATHS.ADMIN}
               sx={rightLink}
             >
               {"Admin"}
@@ -69,7 +70,7 @@ function AppAppBar(props) {
             <Link
               variant="h6"
               underline="none"
-              // href={PATHS.SIGNUPPAGE}
+              href={PATHS.HISTORIADELMANGO}
               sx={{ ...rightLink, color: "#ff4081" }}
             >
               {"Historia"}
@@ -77,7 +78,7 @@ function AppAppBar(props) {
             <Link
               variant="h6"
               underline="none"
-              // href={PATHS.SIGNUPPAGE}
+              href={PATHS.COMERCIO}
               sx={{ ...rightLink, color: "#ff4081" }}
             >
               {"Comercio"}
@@ -85,7 +86,7 @@ function AppAppBar(props) {
             <Link
               variant="h6"
               underline="none"
-              // href={PATHS.SIGNUPPAGE}
+              href={PATHS.TOURISM}
               sx={{ ...rightLink, color: "#ff4081" }}
             >
               {"Turismo"}
