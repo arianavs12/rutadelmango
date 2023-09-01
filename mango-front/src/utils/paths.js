@@ -6,3 +6,5 @@ export const TOURISM = "/tourims";
 export const ADMIN = "/admin";
 export const COMERCIO = "/comercio";
 export const HISTORIADELMANGO = "historiadelmango";
+export const HISTORIATAPANA = "historiatapana";
+export const EXPORTACION = "/exportación";

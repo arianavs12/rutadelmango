@@ -1,5 +1,5 @@
 import React from 'react'
-import AppAppBar from "../components/AppAppBar";
+import AppAppBar from "../components/Nav";
 
 const Comercio = (props) => {
   return (

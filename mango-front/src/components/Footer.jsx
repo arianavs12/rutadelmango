@@ -20,19 +20,15 @@ export default function AppFooter() {
       <Container sx={{ my: 7, display: "flex" }}>
         <Grid container spacing={5}>
           <Grid item xs={6} sm={4} md={3}>
-            <Grid item sx={{ display: "flex" }}>
-              <Box component="a" href="https://facebook.com/" sx={iconStyle}>
-                <img src="/images/facebookicon.png" alt="Facebook" />
-              </Box>
-              <Box component="a" href="https://twitter.com" sx={iconStyle}>
-                <img src="/images/twitter.png" alt="Twitter" />
-              </Box>
+            <Grid item sx={{ display: "flex" }}>     
             </Grid>
             <br />
             <Typography>
+              Ing. Javier Vásquez Echeverria R.
+              <br />
               Tel. 994 721 8082
               <br />
-              larutadelmango@gmail.com
+              javiervaras61@hotmail.com
             </Typography>
             <br />
             <CopyrightRoundedIcon sx={{ height: "15px" }} />

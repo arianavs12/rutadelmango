@@ -1,4 +1,4 @@
-import AppAppBar from "../components/AppAppBar";
+import AppAppBar from "../components/Nav";
 import AppFooter from "../components/Footer";
 //import ProductCTA from "../components/ProductCTA";
 import ProductCategories from "../components/ProductCategories";

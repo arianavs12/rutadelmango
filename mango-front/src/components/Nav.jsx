@@ -1,7 +1,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
-import AppBar from "./StyledComponents/AppBar";
+import AppBar from "./StyledComponents/NavBar";
 import Toolbar from "./StyledComponents/Toolbar";
 import * as PATHS from "../utils/paths";
 
@@ -11,7 +11,7 @@ const rightLink = {
   ml: 3,
 };
 
-function AppAppBar(props) {
+function NavBar(props) {
   return (
     <div>
       <AppBar position="fixed">
@@ -91,6 +91,22 @@ function AppAppBar(props) {
             >
               {"Turismo"}
             </Link>
+            <Link
+              variant="h6"
+              underline="none"
+              href={PATHS.HISTORIATAPANA}
+              sx={{ ...rightLink, color: "#ff4081" }}
+            >
+              {"Historia de Tapana"}
+            </Link>
+            <Link
+              variant="h6"
+              underline="none"
+              href={PATHS.EXPORTACION}
+              sx={{ ...rightLink, color: "#ff4081" }}
+            >
+              {"Exportación"}
+            </Link>
             </>
             )}
           </Box>
@@ -101,4 +117,4 @@ function AppAppBar(props) {
   );
 }
 
-export default AppAppBar;
+export default NavBar;
