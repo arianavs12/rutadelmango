@@ -40,14 +40,6 @@ function NavBar(props) {
                 <Link
                   variant="h6"
                   underline="none"
-                  href='/trips'
-                  sx={{ ...rightLink, color: "#ff4081" }}
-                >
-                  {"my trips"}
-                </Link>
-                <Link
-                  variant="h6"
-                  underline="none"
                   // href= {PATHS.LOGINPAGE}
                   onClick={props.handleLogout}
                   sx={{ ...rightLink, color: "#ff4081" }}
@@ -106,6 +98,14 @@ function NavBar(props) {
               sx={{ ...rightLink, color: "#ff4081" }}
             >
               {"Exportación"}
+            </Link>
+            <Link
+              variant="h6"
+              underline="none"
+              href={PATHS.COMERCIALIZACION}
+              sx={{ ...rightLink, color: "#ff4081" }}
+            >
+              {"Comercialización"}
             </Link>
             </>
             )}

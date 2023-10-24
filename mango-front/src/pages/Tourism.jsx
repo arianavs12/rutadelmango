@@ -5,6 +5,9 @@ const Tourism = (props) => {
   return (
         <div>
             <AppAppBar {...props} />
+            <strong>
+            LUGARES TURISTICOS
+            </strong>
         </div>
   )
 }
